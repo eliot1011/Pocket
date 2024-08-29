@@ -1,27 +1,11 @@
 import rocketImg from '../assets/images/rocket.png';
 import Footer from '../components/Footer';
-import arrowLeftImg from '../assets/images/arrow_left.png';
-import settingImg from '../assets/images/setting.png';
-import pocketTitleImg from '../assets/images/pocket_title.png';
-import calendarImg from '../assets/images/calendar.png';
-import twitterImg from '../assets/images/twitter.png';
-import walletImg from '../assets/images/wallet.png';
-import telegramImg from '../assets/images/telegram.png';
+import { ReactSVG } from 'react-svg';
 
 const Earn = function () {
     return (
-        <div className='flex flex-col w-full min-h-screen bg-gradient-to-b from-[#6fbef6] via-[#35a9ea] to-[#93cff9]'>
-            <div className='flex items-center justify-between w-full mt-[58px] px-[20px]'>
-                <a className='flex items-center'>
-                    <img src={arrowLeftImg} className='mr-[8px]' alt='arrow left image' />
-                    <div>Back</div>
-                </a>
-                <img src={pocketTitleImg} className='' alt='pocket title image' />
-                <a href=''>
-                    <img src={settingImg} className='w-[22px] h-[22px]' alt='setting image' />
-                </a>
-            </div>
-            <div className='flex items-center justify-end mt-2 ml-[32px]'>
+        <div className='flex flex-col w-full pb-[100px] min-h-screen bg-gradient-to-b from-[#6fbef6] via-[#35a9ea] to-[#93cff9]'>
+            <div className='flex items-center justify-end mt-20 ml-[32px]'>
                 <div className='absolute left-[32px]'>
                     <p className='text-[32px] font-bold break-keep'>Earn more coins</p>
                     <p className='text-[10px]'>Make our tasks to get more coins</p>
@@ -33,7 +17,7 @@ const Earn = function () {
                 <div className='flex items-center justify-between py-3 border-b'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center justify-center w-[43px] h-[43px] bg-white border rounded-lg bg-opacity-10'>
-                            <img src={calendarImg} className='w-[20px] h-[20px]' alt='calendar image' />
+                            <ReactSVG src='./imgs/calendar.svg' />
                         </div>
                         <div>
                             <div className='text-[8px] text-white text-opacity-[57%]'>500 Tokens</div>
@@ -46,7 +30,7 @@ const Earn = function () {
                 <div className='flex items-center justify-between py-3 border-b'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center justify-center w-[43px] h-[43px] bg-white border rounded-lg bg-opacity-10'>
-                            <img src={twitterImg} className='w-[20px] h-[20px]' alt='twitter image' />
+                            <ReactSVG src='./imgs/twitter.svg' />
                         </div>
                         <div>
                             <div className='text-[8px] text-white text-opacity-[57%]'>250 Tokens</div>
@@ -62,7 +46,7 @@ const Earn = function () {
                 <div className='flex items-center justify-between py-3 border-b'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center justify-center w-[43px] h-[43px] bg-white border rounded-lg bg-opacity-10'>
-                            <img src={walletImg} className='w-[20px] h-[20px]' alt='wallet image' />
+                            <ReactSVG src='./imgs/wallet.svg' />
                         </div>
                         <div>
                             <div className='text-[8px] text-white text-opacity-[57%]'>1000 Tokens</div>
@@ -75,7 +59,7 @@ const Earn = function () {
                 <div className='flex items-center justify-between py-3 border-b'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center justify-center w-[43px] h-[43px] bg-white border rounded-lg bg-opacity-10'>
-                            <img src={telegramImg} className='w-[20px] h-[20px]' alt='telegram image' />
+                            <ReactSVG src='./imgs/telegram.svg' />
                         </div>
                         <div>
                             <div className='text-[8px] text-white text-opacity-[57%]'>300 Tokens</div>
@@ -88,7 +72,7 @@ const Earn = function () {
                 <div className='flex items-center justify-between py-3 border-b'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center justify-center w-[43px] h-[43px] bg-white border rounded-lg bg-opacity-10'>
-                            <img src={twitterImg} className='w-[20px] h-[20px]' alt='twitter image' />
+                            <ReactSVG src='./imgs/twitter.svg' />
                         </div>
                         <div>
                             <div className='text-[8px] text-white text-opacity-[57%]'>300 Tokens</div>

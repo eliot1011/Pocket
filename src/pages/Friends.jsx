@@ -1,27 +1,12 @@
 import inviteImg from '../assets/images/invite.png';
-import coinImg from '../assets/images/coin.png';
-import tonImg from '../assets/images/ton.png';
 import handMoneyImg from '../assets/images/handmoney.png';
 import Footer from '../components/Footer';
-import arrowLeftImg from '../assets/images/arrow_left.png';
-import settingImg from '../assets/images/setting.png';
-import pocketTitleImg from '../assets/images/pocket_title.png';
-import linkImg from '../assets/images/link.png';
+import { ReactSVG } from 'react-svg';
 
 const Friends = function () {
     return (
-        <div className='flex flex-col w-full min-h-screen bg-gradient-to-b from-[#6fbef6] via-[#35a9ea] to-[#93cff9]'>
-            <div className='flex items-center justify-between w-full mt-[58px] px-[20px]'>
-                <a className='flex items-center'>
-                    <img src={arrowLeftImg} className='mr-[8px]' alt='arrow left image' />
-                    <div>Back</div>
-                </a>
-                <img src={pocketTitleImg} className='' alt='pocket title image' />
-                <a href=''>
-                    <img src={settingImg} className='w-[22px] h-[22px]' alt='setting image' />
-                </a>
-            </div>
-            <div className='w-full'>
+        <div className='flex flex-col pb-[100px] w-full min-h-screen bg-gradient-to-b from-[#6fbef6] via-[#35a9ea] to-[#93cff9]'>
+            <div className='w-full mt-16'>
                 <div className='relative z-10 flex justify-center'>
                     <img src={inviteImg} className='' alt='rocket image' />
                 </div>
@@ -34,18 +19,18 @@ const Friends = function () {
                 <div className='mx-[30px] -mt-[44px] text-left'>Earned</div>
                 <div className='mx-[30px] mt-[8px] py-2 grid justify-items-center grid-cols-2 bg-white bg-opacity-25 rounded-lg'>
                     <div className='flex items-center'>
-                        <img src={coinImg} className='w-6 h-6 mr-[3px]' alt='coin image' />
+                        <ReactSVG src='./imgs/coin.svg' className='mr-[3px]' />
                         <span className='font-bold'>0</span>
                     </div>
                     <div className='flex items-center'>
-                        <img src={tonImg} className='w-6 h-6 mr-[3px]' alt='ton image' />
+                        <ReactSVG src='./imgs/ton.svg' className='mr-[3px]' />
                         <span className='font-bold'>0</span>
                     </div>
                 </div>
             </div>
             <div className='flex justify-between gap-[13px] w-full mt-6 px-[47px]'>
                 <button className='px-[48px] py-[12px] font-bold text-[#35a9ea] text-xs bg-white rounded-lg'>Invite a friend</button>
-                <button className='flex items-center gap-3 px-5 py-3 text-xs bg-white bg-opacity-25 rounded-lg'><img src={linkImg} className='w-[22px] h-[22px]' alt='link image' />Copy</button>
+                <button className='flex items-center gap-3 px-5 py-3 text-xs bg-white bg-opacity-25 rounded-lg'><ReactSVG src='./imgs/link.svg' />Copy</button>
             </div>
             <div className='w-full'>
                 <div className='flex items-center gap-3 px-3 py-2 mx-[30px] mt-[29px] border rounded-lg'>
